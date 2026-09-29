@@ -1,0 +1,28 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Política de Privacidade — SystemSeg Core OS</title><meta name="description" content="Política de Privacidade do SystemSeg Core OS."><style>
+:root{--bg:#061520;--panel:#0d2230;--line:#23495e;--text:#eef7fd;--muted:#9fb7c7;--blue:#1c9ee8;--orange:#f28c00}
+*{box-sizing:border-box} body{margin:0;background:linear-gradient(180deg,#06131d,#071b28);color:var(--text);font-family:Arial,Helvetica,sans-serif;line-height:1.6}
+.wrap{max-width:900px;margin:0 auto;padding:34px 20px 60px}.card{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:28px;box-shadow:0 16px 50px rgba(0,0,0,.2)}
+h1{margin:0 0 6px;font-size:34px}h2{margin-top:30px;font-size:22px}p,li{color:#d7e6ef}.muted{color:var(--muted)}
+a{color:#69c8ff}.brand{display:flex;align-items:center;gap:14px;margin-bottom:22px}.mark{width:48px;height:48px;border-radius:13px;background:linear-gradient(135deg,var(--orange),var(--blue));display:grid;place-items:center;font-weight:800;color:#fff}
+.notice{background:#0a1b26;border-left:4px solid var(--blue);padding:14px 16px;border-radius:10px;margin:18px 0}.footer{margin-top:28px;color:var(--muted);font-size:14px}
+</style></head><body><main class="wrap"><article class="card">
+<div class="brand"><div class="mark">SS</div><div><h1>Política de Privacidade</h1><div class="muted">SystemSeg Core OS • Última atualização: 29/09/2026</div></div></div>
+<p>Esta Política de Privacidade descreve como o <strong>SystemSeg Core OS</strong>, operado pela SystemSeg Tecnologia, trata informações utilizadas para criar, digitalizar, gerar e arquivar ordens de serviço.</p>
+<h2>1. Dados tratados pelo sistema</h2><p>O sistema pode tratar informações inseridas pelo usuário nas ordens de serviço, como nome do cliente, endereço, data do serviço, técnico responsável, itens e valores, observações, assinaturas e fotografias opcionais anexadas à O.S. Quando a função de digitalização é usada, a imagem enviada é processada no navegador para auxiliar na transcrição e no recorte das assinaturas.</p>
+<h2>2. Integração com a Conta do Google</h2><p>Quando o usuário conecta uma Conta do Google, o SystemSeg Core OS solicita autorização OAuth para identificar a conta e acessar o Google Drive com o escopo <code>drive.file</code>. Esse acesso é usado para criar, localizar, atualizar e organizar somente os arquivos e pastas utilizados ou criados pelo aplicativo, como PDFs de ordens de serviço.</p>
+<div class="notice"><strong>Dados do Google:</strong> o aplicativo não solicita acesso geral irrestrito a todos os arquivos do Google Drive. O acesso solicitado é limitado ao escopo necessário para os arquivos usados pelo SystemSeg Core OS.</div>
+<h2>3. Microfone e ditado por voz</h2>
+<p>Quando o usuário toca no ícone de microfone de um campo, o navegador pode solicitar permissão para usar o microfone. O recurso de reconhecimento de voz é fornecido pelas capacidades do navegador/dispositivo. O SystemSeg Core OS utiliza o resultado reconhecido apenas para preencher o campo selecionado.</p>
+
+<h2>4. Fotografias anexadas</h2>
+<p>As fotografias anexadas são opcionais. Elas são redimensionadas e comprimidas no navegador e inseridas no PDF final da ordem de serviço. Quando o PDF é enviado ao Google Drive, as fotografias passam a fazer parte do próprio documento PDF.</p>
+
+<h2>5. Como os dados são armazenados</h2><ul><li>Os PDFs de O.S. são armazenados na Conta do Google Drive autorizada pelo usuário.</li><li>O servidor do sistema usa Cloudflare Workers e Workers KV para armazenar, de forma técnica, a autorização persistente do Google, o e-mail da conta conectada e chaves de dispositivos autorizados.</li><li>No navegador, podem ser armazenados o endereço do servidor, uma chave de dispositivo e rascunhos da O.S. usando armazenamento local do navegador.</li></ul>
+<h2>6. Compartilhamento de dados</h2><p>O SystemSeg Core OS não vende dados pessoais. Os dados são transmitidos apenas aos serviços necessários para executar as funções solicitadas, como Google Drive/Google OAuth e Cloudflare, conforme a operação técnica do sistema.</p>
+<h2>7. Revogação e exclusão do acesso</h2><p>O usuário pode clicar em <strong>Desconectar conta</strong> no painel do SystemSeg Core OS. Essa ação remove a autorização armazenada pelo sistema, invalida os dispositivos vinculados e solicita a revogação do token no Google. O usuário também pode revisar ou revogar o acesso do aplicativo diretamente nas configurações da Conta do Google.</p>
+<h2>8. Segurança</h2><p>O Client Secret e o token de atualização do Google não são armazenados no HTML público do GitHub Pages. As credenciais do servidor ficam na infraestrutura do Cloudflare Worker. Apesar das medidas adotadas, nenhum sistema conectado à internet pode garantir segurança absoluta.</p>
+<h2>9. Retenção</h2><p>Os documentos permanecem no Google Drive até que sejam removidos pelo proprietário da conta ou substituídos pelo próprio fluxo do sistema. Dados técnicos de autorização permanecem enquanto a conta estiver conectada e podem ser apagados ao desconectar.</p>
+<h2>10. Contato</h2><p>Para dúvidas sobre esta Política ou sobre o uso dos dados, entre em contato pelo e-mail <a href="mailto:systemsegtecnologia@gmail.com">systemsegtecnologia@gmail.com</a>.</p>
+<h2>11. Alterações desta Política</h2><p>Esta Política pode ser atualizada para refletir mudanças no sistema, nos serviços integrados ou em requisitos legais e de plataforma. A versão vigente será sempre publicada nesta página.</p>
+<div class="footer"><a href="./">Voltar ao SystemSeg Core OS</a> • <a href="termos.html">Termos de Serviço</a></div>
+</article></main></body></html>
